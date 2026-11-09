@@ -1,0 +1,25 @@
+﻿---- Create Table Query for CityTBL
+--CREATE TABLE [dbo].[CityTBL] (
+--    [ID]       INT           IDENTITY (1, 1) NOT NULL,
+--    [CityName] NVARCHAR (50) NULL,
+--    CONSTRAINT [PK_CityTBL] PRIMARY KEY CLUSTERED ([ID] ASC)
+--);
+
+---- Create Table Query for PeopleTBL
+--CREATE TABLE [dbo].[PeopleTBL] (
+--    [ID]        INT            IDENTITY (1, 1) NOT NULL,
+--    [FirstName] NVARCHAR (50)  NULL,
+--    [LastName]  NVARCHAR (50)  NULL,
+--    [City]      INT            NULL,
+--    [Phone]     NVARCHAR (255) NULL,
+--    CONSTRAINT [PK_PeopleTBL] PRIMARY KEY CLUSTERED ([ID] ASC),
+--    CONSTRAINT [FK_PeopleTBL_CityTBL] FOREIGN KEY ([City]) 
+--        REFERENCES [dbo].[CityTBL] ([ID])
+--);
+
+---- Create Table Query for StudentTBL
+--CREATE TABLE [dbo].[StudentTBL] (
+--    [ID] INT NOT NULL,
+--    CONSTRAINT [PK_StudentTBL] PRIMARY KEY CLUSTERED ([ID] ASC),
+--    CONSTRAINT [FK_StudentTBL_PeopleTBL] FOREIGN KEY ([ID]) REFERENCES [dbo].[PeopleTBL] ([ID])
+--);
