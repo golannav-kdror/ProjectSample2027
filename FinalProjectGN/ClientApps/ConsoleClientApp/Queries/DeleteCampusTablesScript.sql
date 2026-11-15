@@ -1,0 +1,39 @@
+﻿---- =============================================
+---- שלב 1: מחיקת טבלאות בן וטבלאות קשר (תלויות)
+---- =============================================
+--DROP TABLE IF EXISTS [dbo].[LessonTBL];
+--GO
+--DROP TABLE IF EXISTS [dbo].[UserTBL];
+--GO
+--DROP TABLE IF EXISTS [dbo].[StudentTBL];
+--GO
+--DROP TABLE IF EXISTS [dbo].[TeacherTBL];
+--GO
+
+---- =============================================
+---- שלב 2: מחיקת טבלאות ביניים (אב לבן, בן לעזר)
+---- =============================================
+--DROP TABLE IF EXISTS [dbo].[PersonTBL];
+--GO
+--DROP TABLE IF EXISTS [dbo].[SemesterInAYearTBL];
+--GO
+
+---- =============================================
+---- שלב 3: מחיקת טבלאות אב וטבלאות עזר (ללא תלויות)
+---- =============================================
+--DROP TABLE IF EXISTS [dbo].[StudentStatusTBL];
+--GO
+--DROP TABLE IF EXISTS [dbo].[AcademicRankTBL];
+--GO
+--DROP TABLE IF EXISTS [dbo].[DegreeTBL];
+--GO
+--DROP TABLE IF EXISTS [dbo].[RoleTBL];
+--GO
+--DROP TABLE IF EXISTS [dbo].[CourseTBL];
+--GO
+--DROP TABLE IF EXISTS [dbo].[SemesterTBL];
+--GO
+--DROP TABLE IF EXISTS [dbo].[AcademicYearTBL];
+--GO
+--DROP TABLE IF EXISTS [dbo].[CityTBL];
+--GO
